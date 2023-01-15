@@ -1,0 +1,125 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --creme: #E7E7DA;
+    --wit: #FFFFFF;
+    --zwart: #000000;
+    --rood: #D02E26;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    overflow: hidden;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.page{
+    flex-shrink: 0;
+    background-color: var(--creme);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.navigatie{
+    background-color: var(--zwart);
+    color: var(--wit);
+    font-size: 32px;
+    padding: 20px;
+    position: absolute;
+}
+
+.fa-arrow-left{
+    bottom: 0;
+    left: 0;
+}
+
+.fa-arrow-right{
+    bottom: 0;
+    right: 0;
+}
+
+.fa-house{
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+#pagina1 img{
+    width: 100%;
+}
+
+#pagina1 .content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#pagina1 button{
+    background-color: var(--zwart);
+    color: var(--wit);
+    border: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+#pagina2 .content, #pagina3 .content, #pagina4 .content, #pagina5 .content, #pagina6 .content, #pagina7 .content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#pagina6 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: inside;
+}
+
+
+
+
+
+#pagina7 img{
+    width: 100%;
+}
+
+#pagina7 ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#pagina7 ul li{
+    width: 50px;
+    height: 50px;
+    background-color: var(--wit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagina7 ul li i{
+    font-size: 32px;
+}
