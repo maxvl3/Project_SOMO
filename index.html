@@ -1,103 +1,152 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project SOMO</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6e381c5462.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div class="container">
-
-        <div id="pagina1" class="page">
-            <img src="images/somologo.png" alt="">
-            <div class="content">
-                <img src="images/dummy.png" alt="">
-                <h1>Belastingverdragen in Mozambique</h1>
-                <p>Mozambique verliest veel geld door hun huidige belastingverdragen. In deze applicatie gaan we je hier kort meer over vertellen.</p>
-                <button onclick="naarPagina2()">START</button>
+    <div class="wrapper">
+        <div class="page" id="page1">
+            <div class="contentgap">
+                <img class="logo" src="images/somologo.png" alt="">
+                <h1>Tax Treaties in Mozambique</h1>
+                <p>Mozambique is losing a lot of money because of their current tax treaties. In this application we are going to tell you more about this problem.</p>
+                <img id="swipe" src="images/swipe.svg" alt="">
+            </div>
+            <img id="homedrawing" src="images/home_drawing.png" alt="">
+        </div>
+        <div class="page" id="page2">
+            <div class="contentgap">
+                <h1>How much money is Mozambique losing?</h1>
+                <p>The total lost revenue due to no tax being paid on dividends and interest between 2010-2020 is an estimated US$1.4 billion. Per year, Mozambique will miss about US$128 million in WHT revenue, which is about 0.90% of gross domestic product.</p>
+            </div>
+            <img src="images/grafiek.png" alt="">
+        </div>
+        <div class="page" id="page3">
+            <img id="inkomsten" src="images/inkomsten.png" alt="">
+            <img id="land" src="images/land.png" alt="">
+            <img id="lijn" src="images/lijn.png" alt="">
+        </div>
+        <div class="page" id="page4">
+            <div class="contentgap">
+                <h1>What are tax treaties?</h1>
+                <p>A tax treaty is an agreement made between two countries for the purpose of making trading easier and preventing international double taxation.</p>
+            </div>
+            <img src="images/verdragtekenen1.png" alt="">
+        </div>
+        <div class="page" id="page5">
+            <div class="contentgap">
+                <p>Treaties made between developing countries and rich countries are often unfavorable to developing countries. These unfavorable treaties cause money to flow from developing countries to rich countries virtually tax-free.</p>
+            </div>
+            <img src="images/verdragtekenen2.png" alt="">
+        </div>
+        <div class="page" id="page6">
+            <div class="contentgap">
+                <h1>Why is this a problem?</h1>
+                <p>Because Mozambique has entered into unfavorable tax treaties with a number of countries, it is losing a lot of money.</p>
+                <img id="cirkeldiagram" src="images/cirkeldiagram.png" alt="">
+            </div>
+            <img id="huizen1" src="images/huizen1.png" alt="">
+        </div>
+        <div class="page" id="page7">
+            <div class="contentgap">
+                <p>Large international companies trade with Mozambique from these countries so they don't have to pay much, if any, tax. This is a shame and unnecessary because large amounts of money are invested in Mozambique's gas reserves. Because of the current tax treaties, Mozambique barely makes any money from this.</p>
+            </div>
+            <img id="huizen2" src="images/huizen2.png" alt="">
+        </div>
+        <div class="page" id="page8">
+            <div class="contentgap">
+                <h1>What if the tax treaties were better?</h1>
+                <p>If Mozambique had better tax treaties there would now be much more money available by the government. The government could then use the money for such things as: education, healthcare, military, housing and infrastructure.</p>
+            </div>
+            <div id="tryit"><i class="fa-solid fa-calculator"></i><p>Try it yourself!</p></div>
+        </div>
+        <div class="page" id="page9">
+            <div class="contentgap">
+                <h1>Divide the money</h1>
+                <p>Spend the money that was missed out due to flawed tax treates. There are many more sectors that the government can spend money on, this is just an example.</p>
+                <div id="interactie">
+                    <div id="remainingbox">
+                        <p>Remaining: <span id="remaining">$1.4 billion</span></p>
+                    </div>
+                    <div class="sector">
+                        <div>
+                            <img src="images/education.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <label for="sector1">Education:</label>
+                            <input type="range" min="0" max="1400000000" value="0" id="sector1" oninput="updateValues()">
+                            <span id="sector1Value">$0</span>
+                        </div>
+                    </div>
+                    <div class="sector">
+                        <div>
+                            <img src="images/health.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <label for="sector2">Health:</label>
+                            <input type="range" min="0" max="1400000000" value="0" id="sector2" oninput="updateValues()">
+                            <span id="sector2Value">$0</span>
+                        </div>
+                    </div>
+                    <div class="sector">
+                        <div>
+                            <img src="images/military.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <label for="sector3">Military:</label>
+                            <input type="range" min="0" max="1400000000" value="0" id="sector3" oninput="updateValues()">
+                            <span id="sector3Value">$0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="pagina2" class="page">
-
-            <div class="content">
-                <h1>Wat zijn belastingverdragen?</h1>
-                <p>Een belastingverdrag is een overeenkomst die tussen twee landen wordt gesloten met als doel om handelen makkelijker te maken, het voorkomen van internationale dubbele belasting en het vermijden van belasting. De verdragen die gesloten worden tussen ontwikkelingslanden en rijke landen, zijn vaak ongunstig voor de ontwikkelingslanden. Deze ongunstige verdragen zorgen ervoor dat geld vrijwel zonder belasting vloeit van ontwikkelingslanden naar rijke landen.</p>
-                <img src="images/dummy.png" alt="">
+        <div class="page" id="page10">
+            <div class="contentgap">
+                <h1>How to solve this problem?</h1>
+                <div id="probleem">
+                    <img src="images/num1.png" alt="">
+                    <p>Stop current negotiations and first establish a Double Tax Agreement (DTA) policy favorable to Mozambique.</p>
+                </div>
+                <div id="probleem">
+                    <img src="images/num2.png" alt="">
+                    <p>Stop making unfair tax treaties with rich countries.</p>
+                </div>
+                <div id="probleem">
+                    <img src="images/num3.png" alt="">
+                    <p>Review existing tax treaties and stop/ renegotiate if they are not favorable.</p>
+                </div>
+                <div id="probleem">
+                    <img src="images/num4.png" alt="">
+                    <p>When entering into new treaties, ensure that taxes are not too low as in previous treaties.</p>
+                </div>
             </div>
-
-            <i class="fa-solid fa-arrow-left navigatie" onclick="naarPagina1()"></i>
-            <i class="fa-solid fa-arrow-right navigatie" onclick="naarPagina3()"></i>
+            <img id="scheur" src="images/scheuren.png" alt="">
         </div>
-
-        <div id="pagina3" class="page">
-            <div class="content">
-                <h1>Waarom is dit een probleem?</h1>
-                <p>Doordat Mozambique ongunstige belastingverdragen heeft afgesloten met een aantal landen loopt het veel geld mis. Grote internationale bedrijven handelen met Mozambique vanuit deze landen waardoor ze niet of nauwelijks belasting hoeven te betalen. Dit is zonde en onnodig, want er worden grote bedragen geïnvesteerd in de olievoorraad van Mozambique. Door de huidige belastingverdragen verdient Mozambique hier nauwelijks geld aan.</p>
-                <img src="images/dummy.png" alt="">
-            </div>
-            <i class="fa-solid fa-arrow-left navigatie" onclick="naarPagina2()"></i>
-            <i class="fa-solid fa-arrow-right navigatie" onclick="naarPagina4()"></i>
-        </div>
-
-        <div id="pagina4" class="page">
-            <div class="content">
-                <h1>Hoeveel geld loopt Mozambique mis?</h1>
-                <p>Het totaal aantal verloren inkomsten door dat er geen belasting wordt betaald op dividend en rente tussen 2010-2020 is naar schatting 1.4 miljard US dollars. Per jaar loopt mozambique ongeveer 128 miljoen dollar mis in WHT-inkomsten dit is ongeveer 0.90% van het bruto binnenlands product.</p>
-                <img src="images/dummy.png" alt="">
-            </div>
-            <i class="fa-solid fa-arrow-left navigatie" onclick="naarPagina3()"></i>
-            <i class="fa-solid fa-arrow-right navigatie" onclick="naarPagina5()"></i>
-        </div>
-
-        <div id="pagina5" class="page">
-            <div class="content">
-                <h1>Wat als het geld er wel zou zijn?</h1>
-                <p>Als Mozambique betere belastingverdragen had afgesloten was er nu veel meer geld beschikbaar voor de overheid. De overheid kan het geld vervolgens gebruiken voor bijvoorbeeld: onderwijs, zorg, woningen en infrastructuur.</p>
-                <img src="images/dummy.png" alt="">
-            </div>
-            <i class="fa-solid fa-arrow-left navigatie" onclick="naarPagina4()"></i>
-            <i class="fa-solid fa-arrow-right navigatie" onclick="naarPagina6()"></i>
-        </div>
-
-        <div id="pagina6" class="page">
-            <div class="content">
-                <h1>Hoe kan dit probleem opgelost worden?</h1>
-                <ul>
-                    <li>Huidige onderhandelingen stop zetten en eerst een DTA beleid opstellen die gunstig is voor Mozambique</li>
-                    <li>Stoppen met oneerlijke belastingverdragen afsluiten met rijke landen.</li>
-                    <li>Bestaande belastingverdragen opnieuw bekijken en stop zetten/ opnieuw onderhandelen als ze niet gunstig zijn.</li>
-                    <li>Bij het afsluiten van nieuwe verdragen moet er voor gezorgd worden dat de belastingen niet te laag liggen zoals bij eerdere verdragen.</li>
-                </ul>
-                <img src="images/dummy.png" alt="">
-            </div>
-            <i class="fa-solid fa-arrow-left navigatie" onclick="naarPagina5()"></i>
-            <i class="fa-solid fa-arrow-right navigatie" onclick="naarPagina7()"></i>
-        </div>
-
-        <div id="pagina7" class="page">
-            <img src="images/somologo.png" alt="">
-            <div class="content">
+        <div class="page" id="page11">
+            <div class="contentgap">
+                <img class="logo" src="images/somologo.png" alt="">
                 <h1>Deel dit met je vrienden en familie!</h1>
                 <p>Samen zorgen we ervoor dat Mozambique een welvarender land wordt.</p>
-                <ul>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-whatsapp"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
+                <div id="socials">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-solid fa-circle-down"></i></a>
+                </div>
             </div>
-            <i class="fa-solid fa-arrow-left navigatie" onclick="naarPagina6()"></i>
-            <i class="fa-solid fa-house navigatie" onclick="naarPagina1()"></i>
+            <img id="tekenen" src="images/tekenen.png" alt="">
         </div>
-
     </div>
-
     <script src="script.js"></script>
-
 </body>
 </html>
