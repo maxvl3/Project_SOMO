@@ -24,7 +24,7 @@ body .wrapper {
       scroll-snap-type: x mandatory;
 }
 body .wrapper .page {
-  background-color: #E7E7DA;
+  background-color: #e7e7da;
   background-image: url("/images/background1.png");
   background-size: cover;
   height: 100vh;
@@ -258,7 +258,7 @@ body .wrapper #page11 #socials {
 body .wrapper #page11 #socials a {
   text-decoration: none;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 50px;
   height: 50px;
   display: flex;
