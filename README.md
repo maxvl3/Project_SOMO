@@ -4,7 +4,7 @@ Gemaakt door Rick, Martin & Max
 ## 📚 Opdracht
 In dit project kijken we naar Mozambique. Daar werden in 2010 grote gasvelden ontdekt. Westerse, Arabische en Chinese multinationals stonden in de rij om die te gaan ontginnen en zetten ingewikkelde constructies hiervoor op met tientallen dochterondernemingen. Via die ingewikkelde constructies wordt belastinggeld weggesluisd uit Mozambique.
 
-Aan ons was de taak om een bijpassend eindproduct te maken waarin we dit probleem uitleggen/ondersteunen. Als doelgroep hebben we gekozen voor de bevolking van Mozambique. Ons doel is om hun een simpele/duidelijke introductie te geven van dit probleem.
+Aan ons was de taak om een bijpassend eindproduct te maken waarin we dit probleem uitleggen. Als doelgroep hebben we gekozen voor de bevolking van Mozambique. Ons doel is om hun een simpele/duidelijke introductie te geven van dit probleem.
 
 ## ⛑ Over SOMO
 Wij hebben dit project gemaakt in samenwerking met SOMO.
